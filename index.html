@@ -37,34 +37,6 @@
             border: .05rem solid #fff;
         }
 
-
-        /*
-         * Base structure
-         */
-
-        html,
-        body {
-
-            background-color: #333;
-        }
-
-        body {
-            display: -ms-flexbox;
-            display: -webkit-box;
-            display: flex;
-            -ms-flex-pack: center;
-            -webkit-box-pack: center;
-            justify-content: center;
-            color: #fff;
-            text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-            box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-        }
-
-        .cover-container {
-            max-width: 72em;
-        }
-
-
         /*
          * Header
          */
@@ -114,6 +86,30 @@
          */
         .banner {
             padding: 0 1.5rem;
+        }
+
+        .banner-container {
+            background-color: #333;
+            color: #fff;
+            text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+            box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+            min-height: 80%;
+            margin-bottom: 5em;
+
+            display: -ms-flexbox;
+            display: -webkit-box;
+            display: flex;
+            -ms-flex-pack: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+
+        .banner-inner {
+            max-width: 72em;
+        }
+
+        .banner-wrap {
+            min-height: 800px;
         }
 
         .banner .btn-lg {
@@ -180,45 +176,48 @@
 </head>
 <body>
 <!-- Content here -->
-<div class="cover-container d-flex p-3 mx-auto flex-column">
-    <header class="masthead">
-        <div class="inner">
-            <h3 class="masthead-brand">Cover</h3>
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <div class="container-fluid banner">
-        <div class="row">
-            <div class="col-sm">
-                <div class="container mx-auto">
-                    <h3 class="text-uppercase sub-title">Practica desde casa</h3>
-                    <h1 class="text-uppercase font-weight-bold title">Golf Station Pro</h1>
-                    <p class="lead">
-                        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-                    </p>
-                </div>
+<div class="banner-container">
+    <div class="banner-inner h-100 d-flex p-3 mx-auto flex-column">
+        <header class="masthead">
+            <div class="inner">
+                <h3 class="masthead-brand">Cover</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
             </div>
-            <div class="col-sm">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                     style="width: 500px; height: 500px;"
-                     src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17d4c0905b3%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17d4c0905b3%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.1171875%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                     data-holder-rendered="true">
+        </header>
+
+        <div class="container-fluid banner">
+            <div class="row align-items-center banner-wrap">
+                <div class="col-sm">
+                    <div class="container mx-auto">
+                        <h3 class="text-uppercase sub-title">Practica desde casa</h3>
+                        <h1 class="text-uppercase font-weight-bold title"><span style="color: green;">Golf</span> Station Pro</h1>
+                        <p class="lead">
+                            <a href="#" class="btn btn-lg btn-success">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
+                         style="width: 500px; height: 500px;"
+                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17d4c0905b3%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17d4c0905b3%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.1171875%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                         data-holder-rendered="true">
+                </div>
             </div>
         </div>
     </div>
+</div>
+
+
 
     <main role="main" class="inner cover">
 
         <div class="container marketing">
 
             <!-- START THE FEATURETTES -->
-
-            <hr class="featurette-divider">
 
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
@@ -277,7 +276,7 @@
                     href="https://twitter.com/mdo">@mdo</a>.</p>
         </div>
     </footer>
-</div>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
