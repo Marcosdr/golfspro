@@ -101,7 +101,21 @@
                         border-bottom-color: #fff;
                 }
 
+                input[type=submit] {
+                        width: 100%;
+                }
+
                 @media (min-width: 48em) {
+
+                        input[type=submit] {
+                                width: auto;
+                        }
+
+                        .form-wrapper {
+                                width: 60%;
+                                margin: auto;
+                        }
+
                         .masthead-brand {
                                 float: left;
                         }
@@ -173,7 +187,7 @@
                                 <br />
 
                                 <!-- Begin Mailchimp Signup Form -->
-                                <div style="width: 60%; margin: auto;">
+                                <div class="form-wrapper">
                                         <form action="https://golfstationpro.us20.list-manage.com/subscribe/post?u=4557fb355087b5dba9ca538b5&amp;id=7d948b1838"
                                                 method="post" id="mc-embedded-subscribe-form"
                                                 name="mc-embedded-subscribe-form" class="validate" target="_blank"
@@ -184,7 +198,7 @@
                                                                         <label for="mce-EMAIL" class="sr-only">Correo
                                                                                 Electrónico</label>
                                                                         <input type="email" value="" name="EMAIL"
-                                                                                class="email form-control"
+                                                                                class="email form-control mb-3"
                                                                                 id="mce-EMAIL"
                                                                                 placeholder="correo electrónico"
                                                                                 required>
