@@ -145,9 +145,11 @@
             margin-bottom: 1.5rem;
             text-align: center;
         }
+
         .marketing h2 {
             font-weight: 400;
         }
+
         .marketing .col-lg-4 p {
             margin-right: .75rem;
             margin-left: .75rem;
@@ -187,11 +189,15 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD6MVVY7XJ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-QD6MVVY7XJ');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-QD6MVVY7XJ');
     </script>
     <title>Golf Station Pro</title>
 </head>
@@ -205,14 +211,16 @@
                 <div class="col-sm p-0 pl-lg-3 pr-lg-3">
                     <div class="container mx-auto">
                         <h3 class="text-uppercase sub-title">Practica desde casa</h3>
-                        <h1 class="text-uppercase font-weight-bold title"><span style="color: green;">Golf</span> Station Pro</h1>
+                        <h1 class="text-uppercase font-weight-bold title"><span style="color: green;">Golf</span>
+                            Station Pro</h1>
                         <p class="lead">
                             <a href="cta_landing.html" class="btn btn-lg btn-success">Haz tu pedido</a>
                         </p>
                     </div>
                 </div>
                 <div class="col-sm p-0 pl-lg-3 pr-lg-3">
-                  <img class="featurette-image img-fluid mx-auto" alt="500x500" src="assets/golf banner image.jpg" data-holder-rendered="true">
+                    <img class="featurette-image img-fluid mx-auto" alt="500x500" src="assets/golf banner image.jpg"
+                         data-holder-rendered="true">
                 </div>
             </div>
         </div>
@@ -220,47 +228,52 @@
 </div>
 
 
+<main role="main" class="inner cover">
 
-    <main role="main" class="inner cover">
+    <div class="container marketing">
 
-        <div class="container marketing">
+        <!-- START THE FEATURETTES -->
 
-            <!-- START THE FEATURETTES -->
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Mide tu Swing, así de fácil. <span class="text-muted">Así de preciso.</span></h2>
-                    <p class="lead">Golpea la bola y observa a través de la pantalla la distancia recorrida así como su desviación respecto a su trayectoria.
-                        Practica golpeando una bola recta, un draw, un pull, un slice o cualquier otro tipo de lanzamiento.                        
-                    </p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                  <img class="featurette-image img-fluid mx-auto" alt="500x500" src="assets/measure golf parameters.jpg" data-holder-rendered="true">
-                </div>
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Mide tu Swing, así de fácil. <span
+                        class="text-muted">Así de preciso.</span></h2>
+                <p class="lead">Golpea la bola y observa a través de la pantalla la distancia recorrida así como su
+                    desviación respecto a su trayectoria.
+                    Practica golpeando una bola recta, un draw, un pull, un slice o cualquier otro tipo de lanzamiento.
+                </p>
             </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Practica donde quieras. <span class="text-muted">Compacto y fácil.</span></h2>
-                    <p class="lead">Podrás entrenar desde el salón de tu casa o en el exterior, es pequeño y cómodo de montar.</p>
-                    <a href="cta_landing.html" class="btn btn-lg btn-success" style="margin-bottom: 1rem;">Más Info y Precio</a>
-                </div>
-                <div class="col-md-5">
-                  <video width="450" height="500" autoplay loop muted>
-                    <source src="assets/golf training test.mp4" type="video/mp4">
-                  Tu navegador no soporta la etiqueta video.
-                  </video>
-                </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" alt="500x500" src="assets/measure golf parameters.jpg"
+                     data-holder-rendered="true">
             </div>
-
-            <hr class="featurette-divider">
-
-            <!-- /END THE FEATURETTES -->
-
         </div>
-    </main>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Practica donde quieras. <span class="text-muted">Compacto y fácil.</span>
+                </h2>
+                <p class="lead">Podrás entrenar desde el salón de tu casa o en el exterior, es pequeño y cómodo de
+                    montar.</p>
+                <a href="cta_landing.html" class="btn btn-lg btn-success" style="margin-bottom: 1rem;">Más Info y
+                    Precio</a>
+            </div>
+            <div class="col-md-5">
+                <video width="450" height="500" autoplay loop muted>
+                    <source src="assets/golf training test.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta video.
+                </video>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+    </div>
+</main>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
