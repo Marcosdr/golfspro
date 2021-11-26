@@ -16,7 +16,7 @@
         }
 
         .title {
-            font-size: 6em;
+            font-size: 5em;
             margin-bottom: 0.5em;
         }
 
@@ -35,6 +35,10 @@
             text-shadow: none; /* Prevent inheritance from `body` */
             background-color: #fff;
             border: .05rem solid #fff;
+        }
+
+        video {
+            max-width: 100%;
         }
 
         /*
@@ -70,23 +74,9 @@
             border-bottom-color: #fff;
         }
 
-        @media (min-width: 48em) {
-            .masthead-brand {
-                float: left;
-            }
-
-            .nav-masthead {
-                float: right;
-            }
-        }
-
-
         /*
          * Cover
          */
-        .banner {
-            padding: 0 1.5rem;
-        }
 
         .banner-container {
             background-color: #333;
@@ -105,7 +95,7 @@
         }
 
         .banner-inner {
-            max-width: 72em;
+            max-width: 100%;
         }
 
         .banner-wrap {
@@ -117,6 +107,28 @@
             font-weight: 700;
         }
 
+        @media (min-width: 48em) {
+
+            .title {
+                font-size: 6em;
+            }
+
+            .banner-inner {
+                max-width: 72em;
+            }
+
+            .banner {
+                padding: 0 1.5rem;
+            }
+
+            .masthead-brand {
+                float: left;
+            }
+
+            .nav-masthead {
+                float: right;
+            }
+        }
 
         /*
          * Footer
@@ -186,11 +198,11 @@
 <body>
 <!-- Content here -->
 <div class="banner-container">
-    <div class="banner-inner h-100 d-flex p-3 mx-auto flex-column">
+    <div class="banner-inner d-flex p-lg-3 mx-auto flex-column">
 
         <div class="container-fluid banner">
             <div class="row align-items-center banner-wrap">
-                <div class="col-sm">
+                <div class="col-sm p-0 pl-lg-3 pr-lg-3">
                     <div class="container mx-auto">
                         <h3 class="text-uppercase sub-title">Practica desde casa</h3>
                         <h1 class="text-uppercase font-weight-bold title"><span style="color: green;">Golf</span> Station Pro</h1>
@@ -199,7 +211,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm p-0 pl-lg-3 pr-lg-3">
                   <img class="featurette-image img-fluid mx-auto" alt="500x500" src="assets/golf banner image.jpg" data-holder-rendered="true">
                 </div>
             </div>
@@ -233,7 +245,7 @@
                 <div class="col-md-7">
                     <h2 class="featurette-heading">Practica donde quieras. <span class="text-muted">Compacto y fácil.</span></h2>
                     <p class="lead">Podrás entrenar desde el salón de tu casa o en el exterior, es pequeño y cómodo de montar.</p>
-                    <a href="cta_landing.html" class="btn btn-lg btn-success">Más Info y Precio</a>
+                    <a href="cta_landing.html" class="btn btn-lg btn-success" style="margin-bottom: 1rem;">Más Info y Precio</a>
                 </div>
                 <div class="col-md-5">
                   <video width="450" height="500" autoplay loop muted>
