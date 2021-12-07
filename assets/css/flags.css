@@ -12,6 +12,11 @@
     width: 2em;
     line-height: 1.6666em;
 }
+
+.flag-abbr {
+  margin: 0 10px;
+}
+
 .flag-icon:before {
     content: '\00a0';
 }
