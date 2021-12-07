@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/flags.css">
     <style>
 
         .sub-title {
@@ -45,7 +46,13 @@
          * Header
          */
         .masthead {
-            margin-bottom: 2rem;
+            padding: 1em 1em 0;
+        }
+
+        @media (min-width: 48em) {
+            .masthead {
+                margin-bottom: 2rem;
+            }
         }
 
         .masthead-brand {
@@ -104,7 +111,8 @@
 
         @media (min-width: 48em) {
             .banner-wrap {
-                min-height: 800px;
+                min-height: 600px;
+                margin-bottom: 5em;
             }
         }
 
@@ -188,7 +196,7 @@
 
         @media (min-width: 62em) {
             .featurette-heading {
-                margin-top: 3rem;
+                margin-top: 0;
             }
         }
     </style>
@@ -211,6 +219,14 @@
 <!-- Content here -->
 <div class="banner-container">
     <div class="banner-inner d-flex p-lg-3 mx-auto flex-column">
+
+        <header class="masthead">
+            <div class="inner">
+                <nav class="nav nav-masthead justify-content-end">
+                    <a href="en/index.html" class="flag-icon flag-icon-gb"></a>
+                </nav>
+            </div>
+        </header>
 
         <div class="container-fluid banner">
             <div class="row align-items-center banner-wrap">
